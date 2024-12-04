@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart for Bubub Kaffa</title>
+    <style>
+        body {
+            background-color: #282c34;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .heart {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            transform: rotate(-45deg);
+            margin: 20px;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -75px;
+            left: 0;
+        }
+        .heart::after {
+            left: 75px;
+            top: 0;
+        }
+        .message {
+            text-align: center;
+        }
+        .message h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .message p {
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Membuat sesuatu yang romantis untukmu...</h1>
+    <div class="heart"></div>
+    <div class="message">
+        <h1>Untuk seseorang spesial: Bubub Kaffa</h1>
+        <p>Aku mencintaimu lebih dari kata-kata yang bisa ungkapkan.</p>
+    </div>
+</body>
+</html>
